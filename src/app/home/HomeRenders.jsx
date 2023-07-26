@@ -25,15 +25,12 @@ export function RenderTagLines() {
 
     useEffect(() => {
         setTagline();
-        const interval = setInterval(() => {
-            setTagline();
-        }, 5000);
-        return () => clearInterval(interval);
     }, []);
 
     return (
         <div>
-            <div className="text-slate-600 flex text-center " >{currentTagline}</div>
+            <div className="w-screen justify-center text-slate-600 flex text-center text-sm m-1" >{currentTagline}</div>
         </div>
     );
 }
+
