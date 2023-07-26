@@ -1,7 +1,7 @@
 import React from 'react';
-import { RenderBoardCards} from "./BoardRenders"
+import { RenderBoardCards } from "./BoardRenders"
 
-export const BoardPage = () => {
+export default function BoardPage() {
     return (
         <div>
             <RenderBoardCards />
