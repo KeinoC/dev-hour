@@ -6,8 +6,8 @@ import BottomNavBar from "../nav/BottomNavBar";
 export default function HomePage() {
     return (
         <div className="w-screen flex flex-col">
-            <div>
-                <h1 className="text-center text-xl p-0 m-0">
+            <div className="justify-center flex flex-col align-middle h-screen">
+                <h1 className="text-center text-2xl p-0 m-0">
                     Welcome to DevHour
                 </h1>
                 <RenderTagLines />
