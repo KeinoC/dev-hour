@@ -1,0 +1,49 @@
+/* styles.css */
+.board-card {
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: slategrey;
+    position: relative;
+    border-radius: 5px;
+    transition: box-shadow 0.5s;
+  }
+  
+  .icon {
+    font-size: 5em;
+    opacity: 1;
+    transition: opacity 1s;
+    position: relative; /* Add relative positioning to ensure z-index works */
+    z-index: 2; /* Set a higher z-index for the icon */
+  }
+  
+  .description {
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 1s;
+    color: white;
+    position: absolute; /* Add absolute positioning */
+    top: 50%; /* Vertically align the description to the center */
+    left: 50%; /* Horizontally align the description to the center */
+    transform: translate(-50%, -50%); /* Center the description precisely */
+    z-index: 1; /* Set a lower z-index for the description */
+  }
+  
+  .board-card:hover .description {
+    opacity: 1;
+  }
+  
+  .board-card:hover .icon {
+    opacity: 0;
+  }
+  
+  .board-card:hover {
+    background-color: #2c3e50;
+    box-shadow: rgb(235, 179, 37) 0px 3px 8px;
+  }
+  
