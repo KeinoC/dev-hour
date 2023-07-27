@@ -2,6 +2,7 @@
 import React from "react";
 import { BsLinkedin, BsBook } from "react-icons/bs";
 import "./board.css"
+import BottomNavBar from "../nav/BottomNavBar";
 
 const jobBoardsArray = [
     {
@@ -24,9 +25,9 @@ const jobBoardsArray = [
 
 
 
-const renderJobBoards = jobBoardsArray.map((jobBoard) => {
+const renderJobBoards = jobBoardsArray.map((jobBoard, index) => {
     return (
-        <div className="board-card">
+        <div key={index} className="board-card">
             <h1>{jobBoard.name}</h1>
             <a href={jobBoard.url}>
                 <div className="icon-wrapper">
