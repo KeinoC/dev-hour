@@ -1,0 +1,71 @@
+.dev-card-page {
+    height: 80vh;
+    color: rgb(146, 128, 104);
+}
+
+.dev-directory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 3rem;
+}
+
+.dev-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.dev-card {
+    height: 400px;
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(6, 22, 38);
+    position: relative;
+    border-radius: 5px;
+    transition: box-shadow 0.5s;
+    padding: 5px;
+}
+
+.profile-image-wrapper {
+    position: absolute;
+    transform: translateY(-100px); /* Fix the translateY property */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile-image-wrapper:hover {
+    transform: scale(1.01);
+}
+
+.dev-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 55%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+
+}
+
+.dev-bio {
+    font-size: 0.75rem;
+    color: rgb(181, 179, 176);
+    margin-top: 10px;
+}
